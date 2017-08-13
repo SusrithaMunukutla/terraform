@@ -8,7 +8,7 @@ stage 'test'
             phase2: { bat "echo p2; sleep 40s; echo phase2" }
         )
  stage name: 'validate' ,concurrency:1
-    bat "terraform validate -check-variables=true -no-color"
+    bat "terraform validate -check-variables=true"
     
 stage name: 'plan', concurrency: 1
         bat "terraform plan --out plan"
