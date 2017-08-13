@@ -10,9 +10,6 @@ stage 'test'
  
 stage name: 'plan', concurrency: 1
         bat "terraform plan --out plan"
-    
-  stage name: 'validate' ,concurrency:1
-    bat "terraform validate -check-variables=true"
-   
+
 }
 
