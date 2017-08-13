@@ -10,3 +10,4 @@ stage 'test'
 stage name: 'plan', concurrency: 1
         bat "terraform plan --out plan"
 }
+}
